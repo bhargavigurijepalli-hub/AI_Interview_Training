@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<title>
+    Skills - SmartPrep AI
+</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    margin: 0;
+
+    font-family:
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
+    background: #f4f6f9;
+
+    color: #222;
+
+    min-height: 100vh;
+
+    padding: 20px;
+}
+
+.container {
+
+    width: 90%;
+
+    max-width: 700px;
+
+    margin: 50px auto;
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 3px 12px
+        rgba(0,0,0,0.1);
+}
+
+h1 {
+
+    text-align: center;
+
+    margin-bottom: 10px;
+}
+
+.subtitle {
+
+    text-align: center;
+
+    color: #666;
+
+    margin-bottom: 30px;
+}
+
+label {
+
+    display: block;
+
+    margin-top: 18px;
+
+    margin-bottom: 7px;
+
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 6px;
+
+    font-size: 15px;
+
+    font-family: inherit;
+}
+
+textarea {
+
+    min-height: 100px;
+
+    resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+
+    outline: none;
+
+    border-color: #2563eb;
+}
+
+button {
+
+    width: 100%;
+
+    margin-top: 30px;
+
+    padding: 14px;
+
+    background: #2563eb;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 7px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+button:hover {
+
+    background: #1d4ed8;
+}
+
+.info {
+
+    background: #eef6ff;
+
+    padding: 15px;
+
+    border-radius: 7px;
+
+    margin-bottom: 20px;
+
+    line-height: 1.5;
+}
+
+.error {
+
+    background: #fee2e2;
+
+    color: #991b1b;
+
+    border: 1px solid #fecaca;
+
+    padding: 12px;
+
+    border-radius: 7px;
+
+    margin-bottom: 20px;
+
+    font-weight: 600;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>
+        Skills & Interview Settings
+    </h1>
+
+    <p class="subtitle">
+
+        Select your programming language
+        and difficulty level.
+
+    </p>
+
+    <div class="info">
+
+        <strong>
+            Interview Process:
+        </strong>
+
+        <br>
+
+        Aptitude → Technical → Coding → HR / Communication
+
+        <br><br>
+
+        All questions will be displayed
+        with their answers.
+
+    </div>
+
+    <!-- ERROR_MESSAGE -->
+
+    <form
+        action="/skills"
+        method="post"
+        autocomplete="off"
+    >
+
+        <label for="programming_language">
+
+            Programming Language
+
+        </label>
+
+        <select
+            id="programming_language"
+            name="programming_language"
+            required
+        >
+
+            <option value="C">
+                C
+            </option>
+
+            <option value="Java">
+                Java
+            </option>
+
+            <option
+                value="Python"
+                selected
+            >
+                Python
+            </option>
+
+            <option value="SQL">
+                SQL
+            </option>
+
+            <option value="Web Development">
+                Web Development
+            </option>
+
+        </select>
+
+        <label for="skills">
+
+            Your Skills
+
+        </label>
+
+        <textarea
+            id="skills"
+            name="skills"
+            placeholder="Example: Python, SQL, HTML, CSS, Java"
+            autocomplete="off"
+            required
+        ></textarea>
+
+        <label for="experience">
+
+            Experience
+
+        </label>
+
+        <textarea
+            id="experience"
+            name="experience"
+            placeholder="Describe your projects, internships or experience"
+            autocomplete="off"
+        ></textarea>
+
+        <label for="level">
+
+            Interview Difficulty Level
+
+        </label>
+
+        <select
+            id="level"
+            name="level"
+            required
+        >
+
+            <option
+                value="Intermediate"
+                selected
+            >
+                Intermediate
+            </option>
+
+            <option value="Medium">
+                Medium
+            </option>
+
+            <option value="Advanced">
+                Advanced
+            </option>
+
+        </select>
+
+        <button type="submit">
+
+            Start Interview
+
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+
+</html>

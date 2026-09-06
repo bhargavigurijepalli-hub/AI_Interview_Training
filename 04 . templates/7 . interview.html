@@ -1,0 +1,1846 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<title>SmartPrep AI - Interview</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    color: #222;
+}
+
+.header {
+    background: #111827;
+    color: white;
+    padding: 16px 28px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.status {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    font-size: 14px;
+}
+
+.status span {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #22c55e;
+    display: inline-block;
+}
+
+.container {
+    max-width: 1250px;
+    margin: 25px auto;
+    padding: 0 20px;
+}
+
+.candidate-bar {
+    background: white;
+    padding: 16px 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    box-shadow:
+        0 2px 8px
+        rgba(0,0,0,0.08);
+}
+
+.exam-layout {
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    gap: 20px;
+}
+
+.question-panel,
+.camera-panel {
+    background: white;
+    border-radius: 14px;
+    padding: 25px;
+
+    box-shadow:
+        0 2px 10px
+        rgba(0,0,0,0.08);
+}
+
+.round-title {
+    font-size: 15px;
+    font-weight: bold;
+    color: #2563eb;
+    margin-bottom: 8px;
+}
+
+.question-number {
+    color: #6b7280;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.question {
+    font-size: 24px;
+    line-height: 1.45;
+    margin-bottom: 25px;
+}
+
+.part {
+    display: inline-block;
+    padding: 7px 12px;
+    background: #eef2ff;
+    color: #3730a3;
+    border-radius: 20px;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+/* ======================================================
+   MCQ
+   ====================================================== */
+
+.mcq-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.mcq-option {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 16px;
+
+    border: 2px solid #d1d5db;
+    border-radius: 10px;
+
+    background: white;
+
+    cursor: pointer;
+
+    transition:
+        border-color 0.2s,
+        background 0.2s;
+}
+
+.mcq-option:hover {
+    border-color: #2563eb;
+    background: #f8faff;
+}
+
+.mcq-option.selected {
+    border-color: #2563eb;
+    background: #eef2ff;
+}
+
+.mcq-letter {
+    min-width: 35px;
+    height: 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #e5e7eb;
+
+    font-weight: bold;
+}
+
+.mcq-option.selected .mcq-letter {
+    background: #2563eb;
+    color: white;
+}
+
+.mcq-text {
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.mcq-radio {
+    display: none;
+}
+
+/* ======================================================
+   CODE EDITOR
+   ====================================================== */
+
+.code-editor {
+    width: 100%;
+    min-height: 350px;
+    resize: vertical;
+
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+
+    padding: 15px;
+
+    font-family:
+        Consolas,
+        Monaco,
+        monospace;
+
+    font-size: 15px;
+
+    background: #111827;
+    color: #f9fafb;
+
+    outline: none;
+}
+
+.code-editor:focus {
+    border-color: #2563eb;
+}
+
+.controls {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 18px;
+}
+
+button {
+    border: none;
+    border-radius: 8px;
+    padding: 12px 17px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.primary {
+    background: #2563eb;
+    color: white;
+}
+
+.secondary {
+    background: #e5e7eb;
+    color: #111827;
+}
+
+.danger {
+    background: #dc2626;
+    color: white;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.camera-box {
+    background: #111827;
+    border-radius: 12px;
+    overflow: hidden;
+    min-height: 250px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+video {
+    width: 100%;
+    display: block;
+    min-height: 250px;
+    object-fit: cover;
+}
+
+.camera-message {
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.camera-buttons {
+    margin-top: 12px;
+    display: flex;
+    gap: 8px;
+}
+
+.progress-container {
+    margin-bottom: 20px;
+}
+
+.progress-label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.progress-bar {
+    height: 10px;
+    width: 100%;
+    background: #e5e7eb;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    width: 0%;
+    background: #2563eb;
+    transition: width 0.3s ease;
+}
+
+.rounds {
+    margin-top: 20px;
+}
+
+.round-item {
+    padding: 12px;
+    border-radius: 8px;
+    background: #f3f4f6;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.round-item.active {
+    background: #dbeafe;
+    color: #1d4ed8;
+    font-weight: bold;
+}
+
+.round-item.completed {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.feedback {
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    display: none;
+}
+
+.feedback.show {
+    display: block;
+}
+
+.feedback.good {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.feedback.normal {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.timer {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.shortcut-box {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f9fafb;
+    border-radius: 10px;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+
+    .exam-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .camera-panel {
+        order: -1;
+    }
+
+    .question {
+        font-size: 20px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<div class="header">
+
+    <h1>SmartPrep AI</h1>
+
+    <div class="status">
+
+        <span>
+            <span class="dot"></span>
+            Camera
+        </span>
+
+        <span>
+            <span class="dot"></span>
+            Microphone
+        </span>
+
+        <span
+            class="timer"
+            id="timer"
+        >
+            00:00
+        </span>
+
+    </div>
+
+</div>
+
+
+<div class="container">
+
+    <div class="candidate-bar">
+
+        <div>
+            <strong>Candidate:</strong>
+
+            <span id="candidateName">
+                Loading...
+            </span>
+        </div>
+
+        <div>
+            <strong>Level:</strong>
+
+            <span id="candidateLevel">
+                -
+            </span>
+        </div>
+
+        <div>
+            <strong>Language:</strong>
+
+            <span id="candidateLanguage">
+                -
+            </span>
+        </div>
+
+    </div>
+
+
+    <div class="progress-container">
+
+        <div class="progress-label">
+
+            <span id="progressText">
+                Question 1 of 65
+            </span>
+
+            <span id="roundText">
+                Aptitude
+            </span>
+
+        </div>
+
+        <div class="progress-bar">
+
+            <div
+                class="progress-fill"
+                id="progressFill"
+            ></div>
+
+        </div>
+
+    </div>
+
+
+    <div class="exam-layout">
+
+
+        <!-- QUESTION SIDE -->
+
+        <div class="question-panel">
+
+            <div
+                class="round-title"
+                id="roundTitle"
+            >
+                ROUND 1 — APTITUDE
+            </div>
+
+            <div
+                class="part"
+                id="partLabel"
+            >
+                Part 1 of 4
+            </div>
+
+            <div
+                class="question-number"
+                id="questionNumber"
+            >
+                Question 1
+            </div>
+
+            <div
+                class="question"
+                id="questionText"
+            >
+                Loading question...
+            </div>
+
+
+            <!-- ANSWER AREA -->
+
+            <div id="answerArea"></div>
+
+
+            <div class="controls">
+
+                <button
+                    class="secondary"
+                    id="previousButton"
+                    onclick="previousQuestion()"
+                >
+                    ← Previous
+                </button>
+
+                <button
+                    class="primary"
+                    id="nextButton"
+                    onclick="nextQuestion()"
+                >
+                    Next →
+                </button>
+
+            </div>
+
+
+            <div
+                class="feedback"
+                id="feedback"
+            ></div>
+
+
+            <div class="shortcut-box">
+
+                <strong>
+                    Interview controls:
+                </strong>
+
+                <br>
+
+                Select one option for
+                Aptitude, Technical and HR.
+
+                <br>
+
+                Coding questions require
+                code input.
+
+                <br>
+
+                Use Previous and Next
+                to navigate.
+
+            </div>
+
+        </div>
+
+
+        <!-- CAMERA SIDE -->
+
+        <div class="camera-panel">
+
+            <h3>
+                AI Interviewer
+            </h3>
+
+            <div class="camera-box">
+
+                <video
+                    id="camera"
+                    autoplay
+                    muted
+                    playsinline
+                ></video>
+
+                <div
+                    class="camera-message"
+                    id="cameraMessage"
+                >
+                    Camera permission is required
+                    for the interview.
+                </div>
+
+            </div>
+
+
+            <div class="camera-buttons">
+
+                <button
+                    class="primary"
+                    onclick="startCamera()"
+                >
+                    Enable Camera
+                </button>
+
+                <button
+                    class="danger"
+                    onclick="stopCamera()"
+                >
+                    Stop
+                </button>
+
+            </div>
+
+
+            <div class="rounds">
+
+                <h3>
+                    Interview Rounds
+                </h3>
+
+                <div
+                    class="round-item active"
+                    id="round-aptitude"
+                >
+                    Round 1 — Aptitude (20)
+                </div>
+
+                <div
+                    class="round-item"
+                    id="round-technical"
+                >
+                    Round 2 — Technical (20)
+                </div>
+
+                <div
+                    class="round-item"
+                    id="round-coding"
+                >
+                    Round 3 — Coding (5)
+                </div>
+
+                <div
+                    class="round-item"
+                    id="round-hr"
+                >
+                    Round 4 — HR / Communication (20)
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script>
+
+let examData = null;
+
+let currentRound = "aptitude";
+
+let currentIndex = 0;
+
+let stream = null;
+
+let timerSeconds = 0;
+
+let timerInterval = null;
+
+
+const roundOrder = [
+    "aptitude",
+    "technical",
+    "coding",
+    "hr"
+];
+
+
+const roundNames = {
+
+    aptitude:
+        "Aptitude",
+
+    technical:
+        "Technical",
+
+    coding:
+        "Coding",
+
+    hr:
+        "HR / Communication"
+};
+
+
+const roundCounts = {
+
+    aptitude: 20,
+
+    technical: 20,
+
+    coding: 5,
+
+    hr: 20
+};
+
+
+// ======================================================
+// LOAD EXAM
+// ======================================================
+
+async function loadExam() {
+
+    try {
+
+        const response =
+            await fetch(
+                "/api/exam"
+            );
+
+        examData =
+            await response.json();
+
+
+        document.getElementById(
+            "candidateName"
+        ).textContent =
+            examData.candidate.name
+            || "Candidate";
+
+
+        document.getElementById(
+            "candidateLevel"
+        ).textContent =
+            examData.candidate.level;
+
+
+        document.getElementById(
+            "candidateLanguage"
+        ).textContent =
+            examData.candidate.language;
+
+
+        startTimer();
+
+        showQuestion();
+
+        startCamera();
+
+    }
+
+    catch (error) {
+
+        document.getElementById(
+            "questionText"
+        ).textContent =
+            "Unable to load interview.";
+
+        console.error(
+            error
+        );
+
+    }
+
+}
+
+
+// ======================================================
+// CURRENT QUESTION
+// ======================================================
+
+function getCurrentQuestion() {
+
+    return examData.questions[
+        currentRound
+    ][currentIndex];
+
+}
+
+
+// ======================================================
+// SHOW QUESTION
+// ======================================================
+
+function showQuestion() {
+
+    if (!examData) {
+        return;
+    }
+
+
+    const questions =
+        examData.questions[
+            currentRound
+        ];
+
+
+    if (
+        !questions ||
+        !questions.length
+    ) {
+
+        document.getElementById(
+            "questionText"
+        ).textContent =
+            "No questions available.";
+
+        return;
+
+    }
+
+
+    const question =
+        questions[currentIndex];
+
+
+    document.getElementById(
+        "roundTitle"
+    ).textContent =
+
+        "ROUND " +
+
+        (
+            roundOrder.indexOf(
+                currentRound
+            ) + 1
+        ) +
+
+        " — " +
+
+        roundNames[
+            currentRound
+        ].toUpperCase();
+
+
+    document.getElementById(
+        "questionNumber"
+    ).textContent =
+
+        "Question " +
+
+        (currentIndex + 1) +
+
+        " of " +
+
+        questions.length;
+
+
+    document.getElementById(
+        "questionText"
+    ).textContent =
+        question.question;
+
+
+    const part =
+        Math.floor(
+            currentIndex / 5
+        ) + 1;
+
+
+    if (
+        currentRound === "coding"
+    ) {
+
+        document.getElementById(
+            "partLabel"
+        ).textContent =
+            "Coding Question " +
+            (currentIndex + 1);
+
+    }
+
+    else {
+
+        document.getElementById(
+            "partLabel"
+        ).textContent =
+            "Part " +
+            part +
+            " of 4";
+
+    }
+
+
+    renderAnswerArea(
+        question
+    );
+
+
+    document.getElementById(
+        "feedback"
+    ).className =
+        "feedback";
+
+
+    updateProgress();
+
+    updateRoundUI();
+
+    speakQuestion();
+
+}
+
+
+// ======================================================
+// ANSWER AREA
+// ======================================================
+
+function renderAnswerArea(
+    question
+) {
+
+    const area =
+        document.getElementById(
+            "answerArea"
+        );
+
+
+    area.innerHTML = "";
+
+
+    // ==================================================
+    // CODING
+    // ==================================================
+
+    if (
+        currentRound === "coding"
+    ) {
+
+        const textarea =
+            document.createElement(
+                "textarea"
+            );
+
+        textarea.id =
+            "answerInput";
+
+        textarea.className =
+            "code-editor";
+
+        textarea.placeholder =
+            "Write your " +
+            examData.candidate.language +
+            " code here...";
+
+
+        area.appendChild(
+            textarea
+        );
+
+        return;
+    }
+
+
+    // ==================================================
+    // MCQ
+    // ==================================================
+
+    const container =
+        document.createElement(
+            "div"
+        );
+
+    container.className =
+        "mcq-container";
+
+
+    const options =
+        question.options || [];
+
+
+    const letters = [
+        "A",
+        "B",
+        "C",
+        "D"
+    ];
+
+
+    options.forEach(
+        function(
+            option,
+            index
+        ) {
+
+            const label =
+                document.createElement(
+                    "label"
+                );
+
+            label.className =
+                "mcq-option";
+
+
+            const radio =
+                document.createElement(
+                    "input"
+                );
+
+            radio.type =
+                "radio";
+
+            radio.name =
+                "mcqAnswer";
+
+            radio.value =
+                letters[index];
+
+            radio.className =
+                "mcq-radio";
+
+
+            const letter =
+                document.createElement(
+                    "span"
+                );
+
+            letter.className =
+                "mcq-letter";
+
+            letter.textContent =
+                letters[index];
+
+
+            const text =
+                document.createElement(
+                    "span"
+                );
+
+            text.className =
+                "mcq-text";
+
+            text.textContent =
+                option;
+
+
+            label.appendChild(
+                radio
+            );
+
+            label.appendChild(
+                letter
+            );
+
+            label.appendChild(
+                text
+            );
+
+
+            label.addEventListener(
+                "click",
+                function() {
+
+                    document
+                        .querySelectorAll(
+                            ".mcq-option"
+                        )
+                        .forEach(
+                            function(item) {
+
+                                item.classList
+                                    .remove(
+                                        "selected"
+                                    );
+
+                            }
+                        );
+
+
+                    label.classList.add(
+                        "selected"
+                    );
+
+                }
+            );
+
+
+            container.appendChild(
+                label
+            );
+
+        }
+    );
+
+
+    area.appendChild(
+        container
+    );
+
+}
+
+
+// ======================================================
+// GET ANSWER
+// ======================================================
+
+function getCurrentAnswer() {
+
+    // Coding answer
+
+    if (
+        currentRound === "coding"
+    ) {
+
+        const input =
+            document.getElementById(
+                "answerInput"
+            );
+
+        if (!input) {
+            return "";
+        }
+
+        return input.value.trim();
+    }
+
+
+    // MCQ answer
+
+    const selected =
+        document.querySelector(
+            'input[name="mcqAnswer"]:checked'
+        );
+
+
+    if (!selected) {
+        return "";
+    }
+
+
+    return selected.value;
+
+}
+
+
+// ======================================================
+// PROGRESS
+// ======================================================
+
+function getGlobalIndex() {
+
+    let index = 0;
+
+
+    for (
+        const round of roundOrder
+    ) {
+
+        if (
+            round === currentRound
+        ) {
+
+            index +=
+                currentIndex;
+
+            break;
+        }
+
+
+        index +=
+            roundCounts[round];
+
+    }
+
+
+    return index;
+
+}
+
+
+function updateProgress() {
+
+    const globalIndex =
+        getGlobalIndex();
+
+
+    const total =
+        65;
+
+
+    const percentage =
+        (
+            (globalIndex + 1)
+            / total
+        ) * 100;
+
+
+    document.getElementById(
+        "progressText"
+    ).textContent =
+
+        "Question " +
+
+        (globalIndex + 1) +
+
+        " of " +
+
+        total;
+
+
+    document.getElementById(
+        "roundText"
+    ).textContent =
+        roundNames[
+            currentRound
+        ];
+
+
+    document.getElementById(
+        "progressFill"
+    ).style.width =
+        percentage + "%";
+
+}
+
+
+// ======================================================
+// ROUND UI
+// ======================================================
+
+function updateRoundUI() {
+
+    for (
+        const round of roundOrder
+    ) {
+
+        const element =
+            document.getElementById(
+                "round-" + round
+            );
+
+
+        element.classList.remove(
+            "active"
+        );
+
+        element.classList.remove(
+            "completed"
+        );
+
+    }
+
+
+    const currentElement =
+        document.getElementById(
+            "round-" + currentRound
+        );
+
+
+    currentElement.classList.add(
+        "active"
+    );
+
+
+    const currentRoundIndex =
+        roundOrder.indexOf(
+            currentRound
+        );
+
+
+    for (
+        let i = 0;
+        i < currentRoundIndex;
+        i++
+    ) {
+
+        document.getElementById(
+            "round-" +
+            roundOrder[i]
+        ).classList.add(
+            "completed"
+        );
+
+    }
+
+}
+
+
+// ======================================================
+// SAVE ANSWER
+// ======================================================
+
+async function saveCurrentAnswer() {
+
+    const answer =
+        getCurrentAnswer();
+
+
+    try {
+
+        const response =
+            await fetch(
+                "/api/answer",
+                {
+
+                    method:
+                        "POST",
+
+                    headers: {
+
+                        "Content-Type":
+                            "application/json"
+                    },
+
+                    body:
+                        JSON.stringify({
+
+                            round:
+                                currentRound,
+
+                            question_index:
+                                currentIndex,
+
+                            answer:
+                                answer
+
+                        })
+                }
+            );
+
+
+        const result =
+            await response.json();
+
+
+        if (
+            result.success
+        ) {
+
+            showFeedback(
+                result.score,
+                result.feedback
+            );
+
+        }
+
+
+        return result;
+
+    }
+
+    catch (error) {
+
+        console.error(
+            "Answer save error:",
+            error
+        );
+
+        return null;
+
+    }
+
+}
+
+
+// ======================================================
+// NEXT
+// ======================================================
+
+async function nextQuestion() {
+
+    await saveCurrentAnswer();
+
+
+    const questions =
+        examData.questions[
+            currentRound
+        ];
+
+
+    if (
+        currentIndex <
+        questions.length - 1
+    ) {
+
+        currentIndex++;
+
+        showQuestion();
+
+        return;
+
+    }
+
+
+    await finishRound();
+
+
+    const currentRoundPosition =
+        roundOrder.indexOf(
+            currentRound
+        );
+
+
+    if (
+        currentRoundPosition <
+        roundOrder.length - 1
+    ) {
+
+        currentRound =
+            roundOrder[
+                currentRoundPosition + 1
+            ];
+
+
+        currentIndex = 0;
+
+
+        showQuestion();
+
+        return;
+
+    }
+
+
+    window.location.href =
+        "/results";
+
+}
+
+
+// ======================================================
+// PREVIOUS
+// ======================================================
+
+function previousQuestion() {
+
+    if (
+        currentIndex > 0
+    ) {
+
+        currentIndex--;
+
+        showQuestion();
+
+        return;
+
+    }
+
+
+    const currentRoundPosition =
+        roundOrder.indexOf(
+            currentRound
+        );
+
+
+    if (
+        currentRoundPosition > 0
+    ) {
+
+        currentRound =
+            roundOrder[
+                currentRoundPosition - 1
+            ];
+
+
+        currentIndex =
+            examData.questions[
+                currentRound
+            ].length - 1;
+
+
+        showQuestion();
+
+    }
+
+}
+
+
+// ======================================================
+// FINISH ROUND
+// ======================================================
+
+async function finishRound() {
+
+    try {
+
+        await fetch(
+            "/api/finish-round",
+            {
+
+                method:
+                    "POST",
+
+                headers: {
+
+                    "Content-Type":
+                        "application/json"
+                },
+
+                body:
+                    JSON.stringify({
+
+                        round:
+                            currentRound
+
+                    })
+            }
+        );
+
+    }
+
+    catch (error) {
+
+        console.error(
+            error
+        );
+
+    }
+
+}
+
+
+// ======================================================
+// FEEDBACK
+// ======================================================
+
+function showFeedback(
+    score,
+    message
+) {
+
+    const element =
+        document.getElementById(
+            "feedback"
+        );
+
+
+    element.textContent =
+
+        "Score: " +
+
+        score +
+
+        "% — " +
+
+        message;
+
+
+    if (
+        score === 100
+    ) {
+
+        element.className =
+            "feedback show good";
+
+    }
+
+    else {
+
+        element.className =
+            "feedback show normal";
+
+    }
+
+}
+
+
+// ======================================================
+// SPEECH
+// ======================================================
+
+function speakQuestion() {
+
+    if (
+        !("speechSynthesis" in window)
+    ) {
+
+        return;
+
+    }
+
+
+    const question =
+        getCurrentQuestion();
+
+
+    if (!question) {
+
+        return;
+
+    }
+
+
+    window.speechSynthesis.cancel();
+
+
+    const utterance =
+        new SpeechSynthesisUtterance(
+            question.question
+        );
+
+
+    utterance.rate =
+        0.9;
+
+    utterance.pitch =
+        1;
+
+    utterance.volume =
+        1;
+
+
+    window.speechSynthesis.speak(
+        utterance
+    );
+
+}
+
+
+function repeatQuestion() {
+
+    speakQuestion();
+
+}
+
+
+// ======================================================
+// CAMERA
+// ======================================================
+
+async function startCamera() {
+
+    if (
+        !navigator.mediaDevices
+    ) {
+
+        document.getElementById(
+            "cameraMessage"
+        ).textContent =
+            "Camera is not supported by this browser.";
+
+        return;
+
+    }
+
+
+    try {
+
+        stream =
+            await navigator.mediaDevices
+                .getUserMedia({
+
+                    video: true,
+
+                    audio: true
+
+                });
+
+
+        const video =
+            document.getElementById(
+                "camera"
+            );
+
+
+        video.srcObject =
+            stream;
+
+
+        video.style.display =
+            "block";
+
+
+        document.getElementById(
+            "cameraMessage"
+        ).style.display =
+            "none";
+
+    }
+
+    catch (error) {
+
+        document.getElementById(
+            "cameraMessage"
+        ).style.display =
+            "block";
+
+
+        document.getElementById(
+            "cameraMessage"
+        ).textContent =
+            "Camera/microphone permission was not granted.";
+
+
+        console.error(
+            error
+        );
+
+    }
+
+}
+
+
+function stopCamera() {
+
+    if (stream) {
+
+        stream.getTracks()
+            .forEach(
+                track =>
+                    track.stop()
+            );
+
+        stream = null;
+
+    }
+
+
+    const video =
+        document.getElementById(
+            "camera"
+        );
+
+
+    video.srcObject =
+        null;
+
+
+    document.getElementById(
+        "cameraMessage"
+    ).style.display =
+        "block";
+
+
+    document.getElementById(
+        "cameraMessage"
+    ).textContent =
+        "Camera stopped.";
+
+}
+
+
+// ======================================================
+// TIMER
+// ======================================================
+
+function startTimer() {
+
+    timerInterval =
+        setInterval(
+            function() {
+
+                timerSeconds++;
+
+
+                const minutes =
+                    Math.floor(
+                        timerSeconds / 60
+                    );
+
+
+                const seconds =
+                    timerSeconds % 60;
+
+
+                document.getElementById(
+                    "timer"
+                ).textContent =
+
+                    String(minutes)
+                        .padStart(
+                            2,
+                            "0"
+                        )
+
+                    +
+
+                    ":"
+
+                    +
+
+                    String(seconds)
+                        .padStart(
+                            2,
+                            "0"
+                        );
+
+            },
+            1000
+        );
+
+}
+
+
+// ======================================================
+// KEYBOARD SHORTCUTS
+// ======================================================
+
+document.addEventListener(
+    "keydown",
+    function(event) {
+
+        if (
+            event.key === "ArrowRight"
+        ) {
+
+            nextQuestion();
+
+        }
+
+
+        if (
+            event.key === "ArrowLeft"
+        ) {
+
+            previousQuestion();
+
+        }
+
+    }
+);
+
+
+// ======================================================
+// START
+// ======================================================
+
+loadExam();
+
+</script>
+
+</body>
+
+</html>
+```

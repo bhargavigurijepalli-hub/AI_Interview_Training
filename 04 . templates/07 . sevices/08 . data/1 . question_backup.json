@@ -1,0 +1,237 @@
+{
+  "communication": {
+    "intermediate": [
+      "Tell me about yourself.",
+      "What are your strengths?",
+      "What are your weaknesses?",
+      "Why did you choose your engineering branch?",
+      "What are your career goals?",
+      "Describe your college experience.",
+      "What motivates you to learn new skills?",
+      "How do you manage your time?",
+      "Describe a successful project you completed.",
+      "Why should we hire you?"
+    ],
+    "hard": [
+      "Describe a challenging situation you faced in a team and how you handled it.",
+      "Tell me about a time when you had to learn something quickly.",
+      "How would you explain a technical concept to a non-technical person?",
+      "Describe a disagreement with a teammate and how you resolved it.",
+      "Tell me about a failure and what you learned from it.",
+      "How do you handle pressure during an important deadline?",
+      "Describe a situation where you demonstrated leadership.",
+      "How would you respond to critical feedback from your manager?",
+      "Tell me about a time you solved a difficult problem.",
+      "How do you prioritize multiple tasks?"
+    ],
+    "advanced": [
+      "How would you convince a skeptical client to accept your technical solution?",
+      "Describe a situation where you had to influence a team without authority.",
+      "How would you communicate a major production failure to senior management?",
+      "Tell me about a decision you made with incomplete information.",
+      "How would you handle a conflict between business requirements and technical limitations?",
+      "Describe how you would defend a technical decision that your team disagrees with.",
+      "How would you negotiate unrealistic project deadlines?",
+      "Explain how you would present a complex system architecture to an executive.",
+      "Describe a situation where communication directly affected a project's success.",
+      "How would you handle an aggressive interviewer questioning your technical decisions?"
+    ]
+  },
+
+  "aptitude": {
+    "intermediate": [
+      "A train travels at 60 km/hr and passes a pole in 15 seconds. Find the length of the train.",
+      "If a number is increased by 20% and becomes 240, find the original number.",
+      "Find 25% of 480.",
+      "A product costs 800 rupees and is sold for 920 rupees. Find the profit percentage.",
+      "A car travels 180 km in 3 hours. Find its average speed.",
+      "Find the average of 10, 20, 30, 40 and 50.",
+      "If 5 workers complete a task in 12 days, how many worker-days are required?",
+      "A shop gives a 10% discount on an item costing 500 rupees. Find the selling price.",
+      "Find the next number: 2, 4, 8, 16, __.",
+      "If 3 pens cost 45 rupees, how much do 8 pens cost?"
+    ],
+    "hard": [
+      "A train 180 meters long crosses a 270-meter platform in 18 seconds. Find its speed.",
+      "A sum becomes 1,320 after a 10% increase. Find the original sum.",
+      "A can complete a task in 12 days and B in 18 days. How long will they take together?",
+      "A product is marked 30% above cost and sold at a 10% discount. Find the profit percentage.",
+      "The ratio of boys to girls is 3:2 and there are 40 students. Find the number of boys.",
+      "A person spends 75% of their income and saves 5,000 rupees. Find the income.",
+      "Find the compound interest on 10,000 rupees at 10% per year for two years.",
+      "A boat travels 30 km downstream in 2 hours and upstream in 3 hours. Find the speed of the stream.",
+      "Find the missing number: 3, 8, 15, 24, 35, __.",
+      "Six modules must be scheduled with dependency constraints. Explain how you would use logical ordering to find a valid sequence."
+    ],
+    "advanced": [
+      "A storage system loses 15% of its throughput every hour. If the initial throughput is 1,000 MB/s, calculate the throughput after 5 hours.",
+      "A company has 12 servers and each handles 850 requests per second. If traffic increases by 35%, determine the additional capacity required.",
+      "A project has tasks with different dependencies. Explain how you would use topological sorting to determine a valid execution order.",
+      "A system processes 20,000 requests per second and experiences a 25% increase in traffic. Calculate the new required capacity.",
+      "A database query takes 800 ms and optimization reduces execution time by 35%. Calculate the new execution time.",
+      "A storage system has 2 TB capacity and currently uses 72%. Calculate the remaining storage.",
+      "A server handles 5,000 requests per minute. If three identical servers work together, calculate the total theoretical capacity.",
+      "A system has 99.5% availability per month. Explain how to calculate the expected downtime.",
+      "A data pipeline contains five dependent stages. Explain how you would identify the critical path.",
+      "A company wants to reduce application response time from 2 seconds to 500 milliseconds. Explain the performance improvements you would investigate."
+    ]
+  },
+
+  "technical": {
+    "C": {
+      "intermediate": [
+        "What are the basic data types available in C?",
+        "What is the difference between an array and a pointer in C?",
+        "What is a function in C and why is it used?",
+        "Explain the difference between local and global variables in C.",
+        "What is a structure in C?",
+        "What is a pointer in C? Give a simple example.",
+        "What is the difference between while and do-while loops?",
+        "Explain call by value and how pointers can be used to modify values.",
+        "What is recursion in C?",
+        "What is the difference between malloc and calloc?"
+      ],
+      "hard": [
+        "Explain dynamic memory allocation in C.",
+        "What causes a segmentation fault in a C program?",
+        "Explain the difference between stack memory and heap memory.",
+        "What is a dangling pointer?",
+        "What is a memory leak and how can it be prevented?",
+        "Explain structures and unions in C.",
+        "What is a function pointer in C?",
+        "Explain the difference between malloc, calloc, realloc and free.",
+        "How does pointer arithmetic work in C?",
+        "Explain how memory is organized in a C program."
+      ],
+      "advanced": [
+        "Explain how you would debug a complex segmentation fault in C.",
+        "How would you design a memory-efficient C application?",
+        "Explain the problems caused by buffer overflow.",
+        "How can you detect and prevent memory leaks in a large C project?",
+        "Explain multithreading considerations when programming in C.",
+        "How would you optimize a C program for performance?",
+        "Explain undefined behavior in C with examples.",
+        "How would you design a safe dynamic memory management strategy?",
+        "Explain race conditions in a multithreaded C application.",
+        "Describe how you would debug a production-level C application."
+      ]
+    },
+
+    "Python": {
+      "intermediate": [
+        "What are the main data types in Python?",
+        "What is the difference between a list and a tuple?",
+        "What is a dictionary in Python?",
+        "What is a function in Python?",
+        "Explain Python's if, elif and else statements.",
+        "What is a list comprehension?",
+        "What is the difference between == and is?",
+        "Explain mutable and immutable objects in Python.",
+        "What is exception handling in Python?",
+        "What is the difference between a module and a package?"
+      ],
+      "hard": [
+        "Explain object-oriented programming in Python.",
+        "What is inheritance in Python?",
+        "What are decorators in Python?",
+        "Explain generators and the yield keyword.",
+        "What is the difference between shallow copy and deep copy?",
+        "Explain lambda functions in Python.",
+        "How does Python handle memory management?",
+        "What is the difference between *args and **kwargs?",
+        "Explain Python virtual environments.",
+        "How would you debug a Python runtime error?"
+      ],
+      "advanced": [
+        "Explain the Python Global Interpreter Lock and its impact on concurrency.",
+        "How would you optimize a slow Python application?",
+        "Explain multiprocessing versus multithreading in Python.",
+        "How does garbage collection work in Python?",
+        "How would you design a scalable Python backend?",
+        "Explain asynchronous programming using async and await.",
+        "How would you identify and fix a memory leak in Python?",
+        "How would you secure a Python web application?",
+        "Explain caching strategies for a high-traffic Python application.",
+        "Describe how you would debug a production Python application."
+      ]
+    },
+
+    "Java": {
+      "intermediate": [
+        "What are the main features of Java?",
+        "What is the difference between JDK, JRE and JVM?",
+        "What is a class and object in Java?",
+        "Explain inheritance in Java.",
+        "What is method overloading?",
+        "What is method overriding?",
+        "What is an interface in Java?",
+        "What is exception handling in Java?",
+        "What is the difference between ArrayList and LinkedList?",
+        "What is the difference between == and equals() in Java?"
+      ],
+      "hard": [
+        "Explain the four pillars of object-oriented programming in Java.",
+        "How does garbage collection work in Java?",
+        "What is multithreading in Java?",
+        "Explain the difference between HashMap and Hashtable.",
+        "What is the difference between checked and unchecked exceptions?",
+        "Explain Java Collections Framework.",
+        "What is synchronization in Java?",
+        "Explain abstract classes and interfaces.",
+        "What is the difference between String, StringBuilder and StringBuffer?",
+        "How would you debug a Java runtime exception?"
+      ],
+      "advanced": [
+        "Explain JVM memory management in detail.",
+        "How would you optimize a high-performance Java application?",
+        "Explain Java concurrency and thread pools.",
+        "How does garbage collection affect application performance?",
+        "How would you design a scalable Java backend?",
+        "Explain deadlock and how you would prevent it.",
+        "How would you investigate a Java memory leak?",
+        "Explain the Java Memory Model.",
+        "How would you secure a Java web application?",
+        "Describe how you would debug a production Java application."
+      ]
+    },
+
+    "SQL": {
+      "intermediate": [
+        "What is SQL?",
+        "What is a primary key?",
+        "What is a foreign key?",
+        "What is a unique key?",
+        "What is the difference between DELETE and TRUNCATE?",
+        "What is the difference between WHERE and HAVING?",
+        "What is an INNER JOIN?",
+        "What is a GROUP BY clause?",
+        "What is normalization?",
+        "What is an index in SQL?"
+      ],
+      "hard": [
+        "Explain different types of SQL joins.",
+        "What is a subquery?",
+        "What is a correlated subquery?",
+        "Explain database normalization up to 3NF.",
+        "What is a composite key?",
+        "Explain ACID properties.",
+        "What is a database transaction?",
+        "What is a view in SQL?",
+        "How can SQL queries be optimized?",
+        "What is the difference between UNION and UNION ALL?"
+      ],
+      "advanced": [
+        "How would you optimize a slow SQL query?",
+        "Explain database indexing and its trade-offs.",
+        "How would you design a database for thousands of concurrent users?",
+        "Explain database transactions and isolation levels.",
+        "What causes database deadlocks?",
+        "How would you identify and fix database performance bottlenecks?",
+        "Explain database partitioning.",
+        "Explain database replication.",
+        "How would you secure a production database?",
+        "Design a scalable relational database architecture for a large application."
+      ]
+    }
+  }
+}

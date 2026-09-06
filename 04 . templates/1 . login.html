@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+```
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<title>SmartPrep AI - Login</title>
+
+<style>
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .login-container {
+        width: 100%;
+        max-width: 420px;
+        padding: 20px;
+    }
+
+    .login-box {
+        background: white;
+        padding: 40px 35px;
+        border-radius: 18px;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    }
+
+    .logo {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .logo h1 {
+        margin: 0;
+        color: #5b4bc4;
+        font-size: 32px;
+    }
+
+    .logo p {
+        margin-top: 8px;
+        color: #666;
+        font-size: 14px;
+    }
+
+    .welcome {
+        text-align: center;
+        margin: 25px 0;
+    }
+
+    .welcome h2 {
+        margin: 0;
+        color: #333;
+        font-size: 24px;
+    }
+
+    .welcome p {
+        color: #777;
+        font-size: 14px;
+        margin-top: 8px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+        color: #333;
+        font-size: 14px;
+    }
+
+    .form-group input {
+        width: 100%;
+        padding: 13px 14px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 15px;
+        outline: none;
+        transition: 0.3s;
+    }
+
+    .form-group input:focus {
+        border-color: #667eea;
+        box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.15);
+    }
+
+    .password-note {
+        font-size: 12px;
+        color: #777;
+        margin-top: 6px;
+    }
+
+    .error {
+        background: #ffe5e5;
+        color: #c62828;
+        padding: 12px;
+        border-radius: 8px;
+        margin-bottom: 18px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .login-btn {
+        width: 100%;
+        padding: 14px;
+        border: none;
+        border-radius: 8px;
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .login-btn:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 8px 18px rgba(102, 126, 234, 0.3);
+    }
+
+    .info {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 13px;
+        color: #777;
+        line-height: 1.5;
+    }
+
+    .footer {
+        text-align: center;
+        margin-top: 25px;
+        font-size: 12px;
+        color: #999;
+    }
+
+    @media (max-width: 480px) {
+
+        .login-box {
+            padding: 30px 22px;
+        }
+
+        .logo h1 {
+            font-size: 28px;
+        }
+
+    }
+
+</style>
+```
+
+</head>
+
+<body>
+
+```
+<div class="login-container">
+
+    <div class="login-box">
+
+        <div class="logo">
+
+            <h1>SmartPrep AI</h1>
+
+            <p>AI-Powered Interview Training Platform</p>
+
+        </div>
+
+        <div class="welcome">
+
+            <h2>Welcome Back</h2>
+
+            <p>
+                Login to continue your interview preparation
+            </p>
+
+        </div>
+
+        {% if error %}
+
+        <div class="error">
+            {{ error }}
+        </div>
+
+        {% endif %}
+
+        <form
+            action="/login"
+            method="post"
+        >
+
+            <div class="form-group">
+
+                <label for="email">
+                    Email Address
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                    autocomplete="email"
+                >
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="password">
+                    Password
+                </label>
+
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Create or enter your password"
+                    required
+                    minlength="6"
+                    autocomplete="current-password"
+                >
+
+                <div class="password-note">
+                    First time here? Your password will be used
+                    for your account.
+                </div>
+
+            </div>
+
+            <button
+                type="submit"
+                class="login-btn"
+            >
+                Login / Create Account
+            </button>
+
+        </form>
+
+        <div class="info">
+
+            Your email and password will be used to
+            identify your account during this session.
+
+        </div>
+
+        <div class="footer">
+
+            SmartPrep AI &copy; 2026
+
+        </div>
+
+    </div>
+
+</div>
+```
+
+</body>
+
+</html>

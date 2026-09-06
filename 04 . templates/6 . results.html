@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Interview Results</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: #0f172a;
+            color: #f8fafc;
+            font-family: "Segoe UI", Arial, sans-serif;
+            padding: 30px 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 850px;
+            margin: auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .step {
+            color: #38bdf8;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        .subtitle {
+            color: #94a3b8;
+            margin-top: 10px;
+        }
+
+        .score-card {
+            background: #1e293b;
+            padding: 35px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+            margin-bottom: 25px;
+        }
+
+        .score {
+            font-size: 65px;
+            font-weight: bold;
+            color: #38bdf8;
+            margin: 10px 0;
+        }
+
+        .score-label {
+            color: #94a3b8;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .metric {
+            background: #1e293b;
+            padding: 22px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .metric h3 {
+            margin: 0 0 10px;
+            color: #94a3b8;
+            font-size: 14px;
+        }
+
+        .metric-value {
+            font-size: 25px;
+            font-weight: bold;
+            color: #38bdf8;
+        }
+
+        .feedback {
+            background: #1e293b;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+        }
+
+        .feedback h2 {
+            margin-top: 0;
+            color: #38bdf8;
+        }
+
+        .feedback p {
+            color: #cbd5e1;
+            line-height: 1.6;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .button {
+            flex: 1;
+            display: block;
+            text-align: center;
+            padding: 14px;
+            border-radius: 7px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .primary {
+            background: #38bdf8;
+            color: #0f172a;
+        }
+
+        .secondary {
+            background: #334155;
+            color: white;
+        }
+
+        .button:hover {
+            opacity: 0.85;
+        }
+
+        @media (max-width: 650px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            .buttons {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+
+        <div class="step">
+            STEP 6 OF 6
+        </div>
+
+        <h1>🏆 Interview Results</h1>
+
+        <p class="subtitle">
+            Your AI interview assessment is complete.
+        </p>
+
+    </div>
+
+    <div class="score-card">
+
+        <div class="score">
+            {{ score }}/100
+        </div>
+
+        <div class="score-label">
+            Overall Interview Score
+        </div>
+
+    </div>
+
+    <div class="grid">
+
+        <div class="metric">
+            <h3>Questions Attempted</h3>
+
+            <div class="metric-value">
+                {{ questions_attempted }}
+            </div>
+        </div>
+
+        <div class="metric">
+            <h3>Average Score</h3>
+
+            <div class="metric-value">
+                {{ average_score }}
+            </div>
+        </div>
+
+        <div class="metric">
+            <h3>Performance</h3>
+
+            <div class="metric-value">
+                {{ performance }}
+            </div>
+        </div>
+
+    </div>
+
+    <div class="feedback">
+
+        <h2>📋 AI Feedback</h2>
+
+        <p>
+            {{ feedback }}
+        </p>
+
+    </div>
+
+    <div class="feedback">
+
+        <h2>🚀 Improvement Suggestions</h2>
+
+        <p>
+            Practice answering questions using clear and structured
+            explanations. Include examples from your academic projects,
+            technical skills, internships, and practical experience.
+        </p>
+
+    </div>
+
+    <div class="buttons">
+
+        <a href="/test-phase" class="button primary">
+            Try Interview Again
+        </a>
+
+        <a href="/" class="button secondary">
+            Return to Home
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+</html>

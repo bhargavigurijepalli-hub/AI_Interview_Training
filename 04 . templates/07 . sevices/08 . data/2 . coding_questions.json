@@ -1,0 +1,91 @@
+{
+    "C": {
+        "Easy": [
+            "Write a C program to find the largest element in an array.",
+            "Write a C program to reverse a string.",
+            "Write a C program to check whether a number is prime."
+        ],
+        "Medium": [
+            "Write a C program to reverse a singly linked list.",
+            "Write a C program to find the second largest element in an array.",
+            "Write a C program to implement a stack using an array."
+        ],
+        "Hard": [
+            "Write a C program to implement a binary search tree with insertion and inorder traversal.",
+            "Write a C program to detect a cycle in a linked list.",
+            "Write a C program to implement a graph traversal using BFS and DFS."
+        ]
+    },
+
+    "Java": {
+        "Easy": [
+            "Write a Java program to find the second largest element in an array.",
+            "Write a Java program to reverse a string.",
+            "Write a Java program to check whether a number is prime."
+        ],
+        "Medium": [
+            "Write a Java program to reverse a singly linked list.",
+            "Write a Java program to implement a stack using an array.",
+            "Write a Java program to find duplicate elements in an array."
+        ],
+        "Hard": [
+            "Implement an LRU cache in Java using a HashMap and a doubly linked list.",
+            "Write a Java program to detect a cycle in a linked list.",
+            "Implement BFS and DFS traversal of a graph in Java."
+        ]
+    },
+
+    "Python": {
+        "Easy": [
+            "Write a Python program to find the first non-repeating character in a string.",
+            "Write a Python program to check whether a number is prime.",
+            "Write a Python program to find the largest element in a list."
+        ],
+        "Medium": [
+            "Write a Python function to find the longest substring without repeating characters.",
+            "Write a Python program to reverse a singly linked list.",
+            "Write a Python function to find duplicate elements in a list."
+        ],
+        "Hard": [
+            "Implement an LRU cache in Python with O(1) get and put operations.",
+            "Write a Python program to detect a cycle in a linked list.",
+            "Implement BFS and DFS traversal of a graph in Python."
+        ]
+    },
+
+    "SQL": {
+        "Easy": [
+            "Write an SQL query to find the second highest salary from an Employee table.",
+            "Write an SQL query to find employees whose salary is greater than 50000.",
+            "Write an SQL query to count the number of employees in each department."
+        ],
+        "Medium": [
+            "Write an SQL query to find employees whose salary is greater than the average salary of their department.",
+            "Write an SQL query to find the second highest salary in each department.",
+            "Write an SQL query to find duplicate records in a table."
+        ],
+        "Hard": [
+            "Write an SQL query to find the top three highest-paid employees in each department using window functions.",
+            "Write an SQL query to find the highest salary difference between employees in each department.",
+            "Write an SQL query to calculate a running total of employee salaries ordered by joining date."
+        ]
+    },
+
+    "Web Development": {
+        "Easy": [
+            "Create an HTML page containing a registration form with name, email, password and submit button.",
+            "Write JavaScript to reverse a string entered by the user.",
+            "Create a responsive navigation bar using HTML and CSS."
+        ],
+        "Medium": [
+            "Write JavaScript to implement a search filter for a list of products.",
+            "Create a responsive webpage using HTML and CSS Grid or Flexbox.",
+            "Write JavaScript to validate an email address and password in a form."
+        ],
+        "Hard": [
+            "Build a JavaScript application that fetches data from a REST API and displays it dynamically on a webpage.",
+            "Implement a debounced search box using JavaScript that sends an API request only after the user stops typing.",
+            "Design and implement a responsive web application using HTML, CSS and JavaScript with form validation, API integration and dynamic DOM updates."
+        ]
+    }
+}

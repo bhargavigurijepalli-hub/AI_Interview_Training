@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<title>
+    Educational Background - SmartPrep AI
+</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    margin: 0;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-family:
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
+    background: #0f172a;
+
+    color: #f8fafc;
+
+    padding: 20px;
+}
+
+.container {
+
+    width: 100%;
+
+    max-width: 600px;
+
+    background: #1e293b;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 15px 40px
+        rgba(0, 0, 0, 0.4);
+}
+
+.step {
+
+    color: #38bdf8;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+
+    font-size: 14px;
+}
+
+h1 {
+
+    margin: 0 0 8px;
+
+    font-size: 28px;
+}
+
+.description {
+
+    color: #94a3b8;
+
+    margin-bottom: 25px;
+
+    line-height: 1.5;
+}
+
+label {
+
+    display: block;
+
+    margin-top: 16px;
+
+    margin-bottom: 7px;
+
+    font-weight: 600;
+}
+
+input {
+
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #475569;
+
+    border-radius: 7px;
+
+    background: #0f172a;
+
+    color: white;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+input::placeholder {
+
+    color: #64748b;
+}
+
+input:focus {
+
+    border-color: #38bdf8;
+
+    box-shadow:
+        0 0 0 2px
+        rgba(56, 189, 248, 0.15);
+}
+
+button {
+
+    width: 100%;
+
+    padding: 14px;
+
+    margin-top: 25px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #38bdf8;
+
+    color: #0f172a;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+button:hover {
+
+    background: #0ea5e9;
+}
+
+.error {
+
+    background: #7f1d1d;
+
+    color: #fecaca;
+
+    padding: 12px;
+
+    border-radius: 7px;
+
+    margin-bottom: 15px;
+}
+
+.hint {
+
+    color: #64748b;
+
+    font-size: 13px;
+
+    margin-top: 6px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="step">
+        STEP 3 OF 6
+    </div>
+
+    <h1>
+        🎓 Educational Background
+    </h1>
+
+    <p class="description">
+
+        Enter your academic details.
+        The AI will use this information
+        to personalize your interview questions.
+
+    </p>
+
+    <!-- ERROR_MESSAGE -->
+
+    <form
+        action="/education"
+        method="post"
+        autocomplete="off"
+    >
+
+        <label for="college">
+            University / College Name
+        </label>
+
+        <input
+            type="text"
+            id="college"
+            name="college"
+            placeholder="Enter your college name"
+            autocomplete="off"
+            required
+        >
+
+        <label for="degree">
+            Degree
+        </label>
+
+        <input
+            type="text"
+            id="degree"
+            name="degree"
+            placeholder="Enter your degree"
+            autocomplete="off"
+            required
+        >
+
+        <label for="branch">
+            Stream / Branch
+        </label>
+
+        <input
+            type="text"
+            id="branch"
+            name="branch"
+            placeholder="Enter your branch"
+            autocomplete="off"
+            required
+        >
+
+        <label for="graduation_year">
+            Graduation Year
+        </label>
+
+        <input
+            type="number"
+            id="graduation_year"
+            name="graduation_year"
+            min="2000"
+            max="2036"
+            placeholder="Enter graduation year"
+            autocomplete="off"
+            required
+        >
+
+        <div class="hint">
+
+            Enter your expected or completed
+            graduation year.
+
+        </div>
+
+        <button type="submit">
+
+            Build AI Profile & Continue →
+
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+
+</html>

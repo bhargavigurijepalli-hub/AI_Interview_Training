@@ -1,0 +1,357 @@
+{
+  "aptitude": {
+    "intermediate": [
+      "Length = Speed × Time = (60 × 1000 / 3600) × 15 = 250 meters.",
+      "Original number = 240 / 1.20 = 200.",
+      "25% of 480 = 480 × 25 / 100 = 120.",
+      "Profit = 920 - 800 = 120. Profit% = (120 / 800) × 100 = 15%.",
+      "Average speed = Distance / Time = 180 / 3 = 60 km/hr.",
+      "Average = (10 + 20 + 30 + 40 + 50) / 5 = 30.",
+      "Worker-days = 5 × 12 = 60 worker-days.",
+      "Selling price = 500 - 10% of 500 = 500 - 50 = 450 rupees.",
+      "Pattern is ×2, so the next number is 32.",
+      "Cost of 1 pen = 45 / 3 = 15. Cost of 8 pens = 8 × 15 = 120 rupees."
+    ],
+    "medium": [
+      "Length + platform = 180 + 270 = 450 m. Speed = 450 / 18 = 25 m/s = 90 km/hr.",
+      "Original sum = 1320 / 1.10 = 1200.",
+      "Combined work rate = 1/12 + 1/18 = 5/36. Time = 36/5 = 7.2 days.",
+      "Selling price = 130% × 90% of cost = 117% of cost. Profit = 17%.",
+      "Total parts = 3 + 2 = 5. Each part = 40/5 = 8. Boys = 3 × 8 = 24.",
+      "Savings = 25% of income = 5000. Income = 5000 / 0.25 = 20,000 rupees.",
+      "Compound interest = 10000[(1.10)^2 - 1] = 2100 rupees.",
+      "Downstream speed = 30/2 = 15 km/hr. Upstream speed = 30/3 = 10 km/hr. Stream speed = (15 - 10)/2 = 2.5 km/hr.",
+      "Pattern differences are 5, 7, 9, 11, so next difference is 13. Answer = 48.",
+      "Use the dependency relationships to perform a topological sort. Select modules whose dependencies are completed and process them in valid order."
+    ],
+    "advanced": [
+      "Throughput after 5 hours = 1000 × (0.85)^5 ≈ 443.7 MB/s.",
+      "Current capacity = 12 × 850 = 10,200 requests/sec. Required capacity = 10,200 × 1.35 = 13,770. Additional capacity = 3,570 requests/sec.",
+      "Represent each task as a graph node and each dependency as a directed edge. Apply topological sorting to obtain a valid execution order.",
+      "New capacity = 20,000 × 1.25 = 25,000 requests/sec.",
+      "New execution time = 800 × 0.65 = 520 ms.",
+      "Used storage = 2 TB × 0.72 = 1.44 TB. Remaining = 0.56 TB.",
+      "Total theoretical capacity = 3 × 5,000 = 15,000 requests/minute.",
+      "Downtime percentage = 100% - 99.5% = 0.5%. Expected downtime = 0.005 × total minutes in the month.",
+      "Represent stages and dependencies as a directed acyclic graph, then identify the longest dependency path. That path is the critical path.",
+      "Investigate database queries, network latency, application code, caching, algorithms, I/O and infrastructure. The goal is to reduce the response time by about 75%."
+    ]
+  },
+  "communication": {
+    "intermediate": [
+      "Sample answer: I am a Computer Science student with a strong interest in programming and software development. I have worked on academic projects and I enjoy learning new technologies and solving problems.",
+      "Sample answer: My strengths are willingness to learn, problem-solving, adaptability and consistency.",
+      "Sample answer: One weakness is that I sometimes spend extra time making sure my work is correct. I am improving this by prioritizing tasks and managing time more effectively.",
+      "Sample answer: I chose Computer Science because I am interested in programming, technology and building software solutions.",
+      "Sample answer: My goal is to become a strong software professional, continuously improve my technical skills and contribute to meaningful projects.",
+      "Sample answer: My college experience has helped me develop technical knowledge, teamwork skills and experience working on academic projects.",
+      "Sample answer: I am motivated by learning new technologies, solving challenging problems and seeing my skills improve.",
+      "Sample answer: I prioritize tasks based on importance and deadlines, create a plan and complete high-priority work first.",
+      "Sample answer: A successful project is one where I contributed to implementation, testing and problem-solving while working toward the project requirements.",
+      "Sample answer: You should hire me because I am willing to learn, have a foundation in programming and can adapt quickly to new technologies and responsibilities."
+    ],
+    "medium": [
+      "Sample answer: In a difficult team situation, I would first understand everyone's concerns, communicate clearly and focus on finding a practical solution rather than assigning blame.",
+      "Sample answer: When I need to learn something quickly, I identify the core concepts, use reliable resources, practice with small examples and then apply the knowledge to the actual task.",
+      "Sample answer: I would explain a technical concept using simple language, an everyday analogy and a practical example.",
+      "Sample answer: I would listen to the teammate's perspective, explain my reasoning calmly and work toward a solution that supports the project goal.",
+      "Sample answer: I would accept the failure, identify what caused it, learn from the experience and make changes to avoid repeating the same mistake.",
+      "Sample answer: I handle pressure by breaking the work into smaller tasks, prioritizing the most important items and communicating early if there is a risk to the deadline.",
+      "Sample answer: I demonstrate leadership by taking responsibility, communicating clearly, helping teammates and keeping the team focused on the objective.",
+      "Sample answer: I would listen carefully to the feedback, understand the specific improvement required and use it constructively.",
+      "Sample answer: I approach difficult problems by understanding the requirements, breaking the problem into smaller parts, testing possible solutions and selecting the most reliable approach.",
+      "Sample answer: I prioritize tasks according to urgency, importance, dependencies and deadlines."
+    ],
+    "advanced": [
+      "Sample answer: I would understand the client's concerns, explain the technical solution in terms of business benefits, demonstrate evidence and address risks honestly.",
+      "Sample answer: I would build agreement through clear communication, technical evidence, collaboration and understanding the team's concerns rather than relying on authority.",
+      "Sample answer: I would communicate the impact, current status, immediate mitigation, root cause investigation and planned corrective actions clearly and honestly.",
+      "Sample answer: I would identify the available information, evaluate risks and assumptions, make the best decision possible and remain ready to adjust when new information becomes available.",
+      "Sample answer: I would clarify the business priority, explain the technical constraint and propose alternatives that balance business value, cost, risk and feasibility.",
+      "Sample answer: I would explain the reasoning, provide technical evidence, acknowledge valid concerns and remain open to changing the decision if better evidence is presented.",
+      "Sample answer: I would communicate the technical limitations, estimate realistic timelines, identify the highest-priority deliverables and negotiate scope or resources where necessary.",
+      "Sample answer: I would start with the business objective, use a high-level architecture diagram and explain only the components and trade-offs relevant to the executive audience.",
+      "Sample answer: I would identify the communication breakdown, understand how it affected decisions or execution and establish clearer communication processes.",
+      "Sample answer: I would remain calm, listen carefully, answer with facts and explain my technical decisions logically without becoming defensive."
+    ]
+  },
+  "technical": {
+    "C": {
+      "intermediate": [
+        "C provides basic data types such as int, char, float, double, and void.",
+        "An array stores multiple elements of the same type in contiguous memory, while a pointer stores the address of another variable.",
+        "A function is a reusable block of code that performs a specific task. Functions improve code organization and reuse.",
+        "A local variable is declared inside a function or block and is accessible only there. A global variable is declared outside functions and can be accessed by multiple functions.",
+        "A structure is a user-defined data type that groups variables of different data types under one name.",
+        "A pointer is a variable that stores the memory address of another variable. Example: int x = 10; int *p = &x;",
+        "A while loop checks the condition before executing the loop body. A do-while loop executes the body at least once before checking the condition.",
+        "C normally uses call by value, meaning a copy of the value is passed. A pointer can be passed so the function can modify the original variable.",
+        "Recursion occurs when a function calls itself. It is useful for problems such as tree traversal, factorial calculation, and divide-and-conquer algorithms.",
+        "malloc allocates uninitialized memory, while calloc allocates memory and initializes it to zero."
+      ],
+      "medium": [
+        "Dynamic memory allocation allows memory to be allocated during program execution using malloc, calloc, realloc, and released using free.",
+        "A segmentation fault usually occurs when a program accesses invalid memory, such as dereferencing a NULL or dangling pointer.",
+        "Stack memory is automatically managed and is commonly used for local variables and function calls. Heap memory is dynamically allocated and manually managed.",
+        "A dangling pointer points to memory that has already been freed or is no longer valid.",
+        "A memory leak occurs when allocated memory is no longer accessible but has not been released using free.",
+        "A structure can contain members of different types and each member has separate storage. A union shares the same memory among all members.",
+        "A function pointer stores the address of a function and can be used to call functions indirectly or implement callbacks.",
+        "malloc allocates memory, calloc allocates and initializes memory to zero, realloc changes an existing allocation size, and free releases allocated memory.",
+        "Pointer arithmetic changes a pointer based on the size of its data type. For example, incrementing an int pointer moves it by sizeof(int) bytes.",
+        "A C program's memory is generally organized into text/code, initialized data, uninitialized data, heap, and stack regions."
+      ],
+      "advanced": [
+        "To debug a complex segmentation fault, I would reproduce the issue, inspect the stack trace, use a debugger such as GDB, check pointer values and memory access, and use tools such as AddressSanitizer.",
+        "A memory-efficient C application should use appropriate data structures, avoid unnecessary allocations, release memory correctly, reuse buffers when practical, and minimize memory fragmentation.",
+        "A buffer overflow occurs when data is written beyond the allocated boundary of a buffer. It can cause crashes, data corruption, or security vulnerabilities.",
+        "Memory leaks can be detected using tools such as Valgrind or AddressSanitizer and prevented through disciplined ownership and correct use of free.",
+        "Multithreaded C programs must consider synchronization, race conditions, shared memory, mutexes, deadlocks, and thread-safe data access.",
+        "I would optimize C code by profiling first, identifying bottlenecks, improving algorithms and data structures, reducing unnecessary operations, and using compiler optimization carefully.",
+        "Undefined behavior means the C standard does not define what should happen. Examples include accessing an array outside its bounds and using an invalid pointer.",
+        "A safe dynamic memory strategy should clearly define ownership, check allocation results, initialize memory when required, release resources exactly once, and avoid dangling pointers.",
+        "A race condition occurs when multiple threads access shared data concurrently and the result depends on execution order. Mutexes or other synchronization mechanisms can prevent it.",
+        "For a production C application, I would reproduce the issue if possible, collect logs and core dumps, inspect stack traces, use debugging tools, analyze memory and concurrency problems, and create a controlled fix."
+      ]
+    },
+    "Python": {
+      "intermediate": [
+        "Common Python data types include int, float, str, bool, list, tuple, set, and dict.",
+        "A list is mutable, while a tuple is immutable. Lists are generally used when the collection may change.",
+        "A dictionary stores data as key-value pairs and provides fast lookup by key.",
+        "A function is a reusable block of code defined using the def keyword.",
+        "if, elif, and else are used to execute different blocks of code depending on conditions.",
+        "A list comprehension is a concise way to create a list from an iterable, optionally using a condition.",
+        "== checks whether two values are equal, while is checks whether two references point to the same object.",
+        "Mutable objects can be changed after creation, such as lists and dictionaries. Immutable objects cannot be changed, such as strings, integers, and tuples.",
+        "Exception handling uses try and except to catch runtime errors. else and finally can also be used for additional control.",
+        "A module is a Python file containing code. A package is a directory containing related modules, typically organized as a Python package."
+      ],
+      "medium": [
+        "Object-oriented programming organizes software around classes and objects and supports concepts such as encapsulation, inheritance, polymorphism, and abstraction.",
+        "Inheritance allows a class to reuse and extend the attributes and methods of another class.",
+        "A decorator is a function that modifies or extends the behavior of another function without changing its source code.",
+        "A generator produces values lazily using yield, which can reduce memory usage for large data sequences.",
+        "A shallow copy copies the outer object while nested objects may still be shared. A deep copy recursively copies nested objects.",
+        "A lambda is a small anonymous function, commonly used with functions such as map, filter, and sorted.",
+        "Python manages memory automatically using reference counting and a garbage collector that handles reference cycles.",
+        "*args collects extra positional arguments, while **kwargs collects extra keyword arguments.",
+        "A virtual environment provides an isolated Python environment so project dependencies do not conflict with other projects.",
+        "I would debug a Python runtime error by reading the traceback, identifying the failing line, checking variable values and assumptions, reproducing the problem, and testing the fix."
+      ],
+      "advanced": [
+        "The Python Global Interpreter Lock allows only one thread at a time to execute Python bytecode in the standard CPython implementation. It can limit CPU-bound multithreaded workloads, while threads remain useful for many I/O-bound tasks.",
+        "I would optimize a slow Python application by profiling it first, identifying bottlenecks, improving algorithms, reducing unnecessary work, optimizing database queries, caching repeated operations, and using concurrency where appropriate.",
+        "Multithreading uses multiple threads within one process and is useful for many I/O-bound workloads. Multiprocessing uses separate processes and can execute CPU-bound Python code in parallel.",
+        "Python primarily uses reference counting for memory management and also has a cyclic garbage collector to detect reference cycles.",
+        "A scalable Python backend should use modular architecture, efficient database access, caching, asynchronous or background processing where appropriate, horizontal scaling, monitoring, and secure APIs.",
+        "Asynchronous programming allows a program to handle other tasks while waiting for I/O. async defines asynchronous functions and await waits for asynchronous operations without blocking the event loop.",
+        "I would investigate a Python memory leak using memory profilers, tracemalloc, heap analysis, object lifetime inspection, and by checking for growing collections or resources that are not released.",
+        "A secure Python web application should validate input, use parameterized queries, secure authentication, protect secrets, configure HTTPS, prevent common web attacks, and keep dependencies updated.",
+        "Caching strategies include application-level caching, database query caching, distributed caches such as Redis, HTTP caching, and CDN caching depending on the workload.",
+        "For production debugging, I would inspect logs, metrics, traces, error reports, recent deployments, resource usage, database performance, and reproduce the issue safely before applying and validating a fix."
+      ]
+    },
+    "Java": {
+      "intermediate": [
+        "Java is object-oriented, platform independent, robust, secure, portable, and supports automatic memory management.",
+        "JDK is used to develop Java applications, JRE provides the environment to run Java applications, and JVM executes Java bytecode.",
+        "A class is a blueprint defining data and behavior. An object is an instance of a class.",
+        "Inheritance allows a class to acquire properties and methods from another class.",
+        "Method overloading means defining multiple methods with the same name but different parameter lists.",
+        "Method overriding occurs when a subclass provides its own implementation of a method inherited from a superclass.",
+        "An interface defines a contract that classes can implement. It can contain abstract methods and, in modern Java, default and static methods.",
+        "Java exception handling uses try, catch, finally, throw, and throws to manage exceptional conditions.",
+        "ArrayList provides fast indexed access and is backed by a dynamic array. LinkedList is based on linked nodes and can be useful for certain insertion and removal operations.",
+        "== compares primitive values or object references, while equals() is generally used to compare object content when properly implemented."
+      ],
+      "medium": [
+        "The four main OOP principles are encapsulation, inheritance, polymorphism, and abstraction.",
+        "Java garbage collection automatically identifies objects that are no longer reachable and reclaims their memory.",
+        "Multithreading allows multiple threads to execute concurrently within a Java application.",
+        "HashMap is generally unsynchronized and allows one null key, while Hashtable is synchronized and does not allow null keys or values.",
+        "Checked exceptions are checked by the compiler, while unchecked exceptions are subclasses of RuntimeException and are not required to be declared.",
+        "The Java Collections Framework provides interfaces and implementations such as List, Set, Map, Queue, ArrayList, HashSet, and HashMap.",
+        "Synchronization controls concurrent access to shared resources to prevent inconsistent results and race conditions.",
+        "An abstract class can contain state, constructors, concrete methods, and abstract methods. An interface primarily defines a contract and supports multiple implementation inheritance.",
+        "String is immutable, StringBuilder is mutable and generally preferred for single-threaded string modification, while StringBuffer is synchronized.",
+        "I would debug a Java runtime exception by reading the stack trace, identifying the root cause, inspecting the relevant code and values, reproducing the issue, and testing the fix."
+      ],
+      "advanced": [
+        "JVM memory includes areas such as heap, stacks, metaspace, program counters, and native memory. Objects are mainly stored on the heap while each thread has its own stack.",
+        "I would optimize a high-performance Java application by profiling it, optimizing algorithms and database access, tuning garbage collection, improving concurrency, reducing allocations, and monitoring system behavior.",
+        "Java concurrency provides threads, executors, thread pools, synchronization primitives, locks, concurrent collections, and atomic operations for safe concurrent execution.",
+        "Garbage collection can temporarily affect application performance through CPU consumption and pause times. Appropriate collectors and heap configuration can reduce these effects.",
+        "A scalable Java backend should use stateless services, efficient database access, caching, asynchronous processing where appropriate, load balancing, monitoring, and horizontal scaling.",
+        "Deadlock occurs when threads wait indefinitely for locks held by each other. It can be prevented using consistent lock ordering, timeouts, and careful synchronization design.",
+        "A Java memory leak can be investigated using heap dumps, profilers, garbage collection logs, object-retention analysis, and monitoring heap growth.",
+        "The Java Memory Model defines how threads interact through memory, including visibility, ordering, and atomicity guarantees.",
+        "A secure Java web application should use secure authentication, authorization, input validation, parameterized queries, HTTPS, secure configuration, dependency updates, and protection against common web vulnerabilities.",
+        "Production debugging involves examining logs, metrics, traces, thread dumps, heap dumps, database behavior, recent changes, and reproducing the problem safely."
+      ]
+    },
+    "SQL": {
+      "intermediate": [
+        "SQL stands for Structured Query Language and is used to create, read, update, and delete data in relational databases.",
+        "A primary key uniquely identifies each row in a table and cannot contain duplicate or NULL values.",
+        "A foreign key is a column or group of columns that references a key in another table and helps maintain referential integrity.",
+        "A unique key ensures that values in a column or group of columns are unique. Database systems may allow NULL depending on the implementation.",
+        "DELETE removes selected rows and can use a WHERE clause, while TRUNCATE removes all rows more directly and generally cannot use WHERE.",
+        "WHERE filters rows before grouping, while HAVING filters groups after GROUP BY.",
+        "An INNER JOIN returns rows where matching values exist in both joined tables.",
+        "GROUP BY groups rows with the same values so aggregate functions such as COUNT, SUM, AVG, MIN, and MAX can be applied.",
+        "Normalization organizes data to reduce redundancy and prevent update, insertion, and deletion anomalies.",
+        "An index is a data structure that can speed up data retrieval but adds storage overhead and can slow inserts and updates."
+      ],
+      "medium": [
+        "Common SQL joins include INNER JOIN, LEFT JOIN, RIGHT JOIN, and FULL OUTER JOIN. They determine how matching and non-matching rows are returned.",
+        "A subquery is a query nested inside another query and can be used in SELECT, FROM, WHERE, or HAVING clauses.",
+        "A correlated subquery depends on values from the outer query and is evaluated in relation to each outer row.",
+        "Normalization up to 3NF generally removes repeating groups, partial dependencies, and transitive dependencies while preserving appropriate relationships.",
+        "A composite key consists of multiple columns that together uniquely identify a row.",
+        "ACID stands for Atomicity, Consistency, Isolation, and Durability and describes important properties of reliable transactions.",
+        "A transaction is a sequence of database operations treated as a single logical unit of work.",
+        "A view is a virtual table defined by a SQL query. It can simplify complex queries and provide controlled access to data.",
+        "SQL queries can be optimized using suitable indexes, efficient joins, filtering early, avoiding unnecessary columns, examining execution plans, and improving schema design.",
+        "UNION combines query results and removes duplicates, while UNION ALL combines results without removing duplicates and is usually faster."
+      ],
+      "advanced": [
+        "I would optimize a slow SQL query by examining its execution plan, checking indexes, reviewing joins and filters, reducing unnecessary data retrieval, and addressing expensive operations.",
+        "Indexes improve read performance but consume storage and increase the cost of inserts, updates, and deletes. Choosing indexes requires balancing read and write workloads.",
+        "A database for thousands of concurrent users should use proper normalization, indexing, connection pooling, transactions, caching where appropriate, monitoring, and scaling strategies.",
+        "Transactions provide reliable changes to data. Isolation levels control how concurrent transactions can see each other's changes and balance consistency with concurrency.",
+        "Database deadlocks occur when transactions hold locks and wait for resources held by each other. They can be reduced using consistent access order, short transactions, and appropriate isolation and locking strategies.",
+        "Performance bottlenecks can be identified using query execution plans, database monitoring, slow-query logs, CPU and I/O metrics, lock analysis, and workload profiling.",
+        "Database partitioning divides large tables or indexes into smaller logical pieces based on a partition key, improving manageability and potentially query performance.",
+        "Replication maintains copies of database data on multiple servers. It can improve availability and read scalability depending on the replication design.",
+        "A production database should use strong authentication, least-privilege access, encryption, secure backups, auditing, patching, network controls, and protection of sensitive credentials.",
+        "A scalable relational architecture may use normalized transactional storage, carefully designed indexes, connection pooling, read replicas, caching, partitioning where needed, backups, monitoring, and horizontal service scaling."
+      ]
+    },
+    "Web Development": {
+      "intermediate": [
+        "HTML stands for HyperText Markup Language and defines the structure and content of web pages.",
+        "HTML provides the structure of a page, while CSS controls presentation such as colors, spacing, fonts, and layout.",
+        "JavaScript adds behavior and interactivity to web pages and can also be used for server-side development.",
+        "An id identifies a specific element and should normally be unique on a page, while a class can be applied to multiple elements.",
+        "Semantic HTML elements such as header, nav, main, section, article, and footer describe the meaning and structure of content.",
+        "The CSS box model describes an element as content surrounded by padding, border, and margin.",
+        "Responsive web design allows a website to adapt to different screen sizes and devices using flexible layouts, media queries, and responsive units.",
+        "Inline CSS is written directly on an element, internal CSS is placed in a style block, and external CSS is stored in a separate stylesheet.",
+        "The DOM is a programming representation of an HTML document that JavaScript can use to read and modify page content and structure.",
+        "let and const provide block scope. const cannot be reassigned, while let can be reassigned. var has function scope and older JavaScript behavior."
+      ],
+      "medium": [
+        "Flexbox is mainly designed for one-dimensional layouts, while CSS Grid is designed for two-dimensional rows and columns.",
+        "Event bubbling means an event triggered on a child element can propagate upward through its parent elements.",
+        "Promises represent eventual completion or failure of asynchronous operations. async and await provide a cleaner syntax for working with promises.",
+        "localStorage persists data across browser sessions, while sessionStorage normally lasts only for the current browser tab or session.",
+        "Form validation checks user input against expected rules before submitting data. Validation can be performed on the client and must also be performed securely on the server.",
+        "A REST API exposes resources through HTTP endpoints and allows clients to communicate with server-side applications.",
+        "GET retrieves data, POST creates or submits data, PUT generally replaces or updates a resource, and DELETE removes a resource.",
+        "Authentication verifies who a user is, while authorization determines what an authenticated user is allowed to access.",
+        "Page loading can be optimized using compressed assets, caching, image optimization, lazy loading, code splitting, minimizing requests, and efficient server responses.",
+        "Responsive design uses flexible layouts and CSS media queries to adjust styles based on viewport characteristics."
+      ],
+      "advanced": [
+        "A scalable full-stack application can use a CDN and load balancer in front of stateless application servers, caching, scalable databases, background workers, monitoring, and automated deployment.",
+        "Browser caching stores resources locally, CDN caching stores content near users, and server-side caching stores reusable results closer to application logic or data sources.",
+        "Secure token authentication should use short-lived access tokens, securely managed refresh tokens, HTTPS, appropriate storage, token rotation where appropriate, expiration, and server-side authorization checks.",
+        "WebSockets provide persistent two-way communication between client and server and are useful for real-time applications such as chat, live notifications, and collaborative systems.",
+        "A JavaScript memory leak can be investigated using browser developer tools, heap snapshots, allocation profiling, and checking event listeners, timers, closures, and retained objects.",
+        "A large single-page application can be optimized through code splitting, lazy loading, tree shaking, efficient rendering, caching, optimized assets, and reducing unnecessary state updates.",
+        "Code splitting divides JavaScript into smaller bundles that can be loaded when needed. Lazy loading delays loading resources until they are required.",
+        "A secure API should enforce authentication and authorization, validate input, use HTTPS, apply rate limiting, protect secrets, use secure headers, and prevent injection and other common attacks.",
+        "High traffic and sudden load spikes can be handled using load balancing, horizontal scaling, caching, CDN delivery, queues, autoscaling, database scaling, rate limiting, and graceful degradation.",
+        "Production debugging should combine logs, metrics, traces, browser performance tools, server monitoring, API timings, database analysis, and controlled reproduction."
+      ]
+    }
+  },
+  "coding": {
+    "C": {
+      "Easy": [
+        "#include <stdio.h>\n\nint main() {\n    int arr[] = {10, 25, 5, 40, 15};\n    int n = 5;\n    int largest = arr[0];\n\n    for (int i = 1; i < n; i++) {\n        if (arr[i] > largest)\n            largest = arr[i];\n    }\n\n    printf(\"Largest = %d\", largest);\n    return 0;\n}",
+        "#include <stdio.h>\n#include <string.h>\n\nint main() {\n    char str[] = \"hello\";\n    int i, n = strlen(str);\n\n    for (i = n - 1; i >= 0; i--)\n        printf(\"%c\", str[i]);\n\n    return 0;\n}",
+        "#include <stdio.h>\n\nint main() {\n    int n = 29;\n    int prime = 1;\n\n    if (n < 2)\n        prime = 0;\n\n    for (int i = 2; i * i <= n; i++) {\n        if (n % i == 0) {\n            prime = 0;\n            break;\n        }\n    }\n\n    if (prime)\n        printf(\"Prime\");\n    else\n        printf(\"Not Prime\");\n\n    return 0;\n}"
+      ],
+      "Medium": [
+        "#include <stdio.h>\n#include <stdlib.h>\n\nstruct Node {\n    int data;\n    struct Node *next;\n};\n\nstruct Node* reverse(struct Node *head) {\n    struct Node *prev = NULL;\n    struct Node *curr = head;\n\n    while (curr != NULL) {\n        struct Node *next = curr->next;\n        curr->next = prev;\n        prev = curr;\n        curr = next;\n    }\n\n    return prev;\n}",
+        "#include <stdio.h>\n#include <limits.h>\n\nint main() {\n    int arr[] = {10, 25, 5, 40, 30};\n    int n = 5;\n    int largest = INT_MIN;\n    int second = INT_MIN;\n\n    for (int i = 0; i < n; i++) {\n        if (arr[i] > largest) {\n            second = largest;\n            largest = arr[i];\n        } else if (arr[i] > second && arr[i] != largest) {\n            second = arr[i];\n        }\n    }\n\n    printf(\"Second largest = %d\", second);\n    return 0;\n}",
+        "#include <stdio.h>\n\n#define MAX 100\n\nint stack[MAX];\nint top = -1;\n\nvoid push(int value) {\n    if (top == MAX - 1)\n        printf(\"Stack Overflow\");\n    else\n        stack[++top] = value;\n}\n\nint pop() {\n    if (top == -1)\n        return -1;\n\n    return stack[top--];\n}\n\nint main() {\n    push(10);\n    push(20);\n    printf(\"%d\", pop());\n\n    return 0;\n}"
+      ],
+      "Hard": [
+        "#include <stdio.h>\n#include <stdlib.h>\n\nstruct Node {\n    int data;\n    struct Node *left;\n    struct Node *right;\n};\n\nstruct Node* insert(struct Node* root, int value) {\n    if (root == NULL) {\n        root = malloc(sizeof(struct Node));\n        root->data = value;\n        root->left = root->right = NULL;\n        return root;\n    }\n\n    if (value < root->data)\n        root->left = insert(root->left, value);\n    else\n        root->right = insert(root->right, value);\n\n    return root;\n}\n\nvoid inorder(struct Node* root) {\n    if (root != NULL) {\n        inorder(root->left);\n        printf(\"%d \", root->data);\n        inorder(root->right);\n    }\n}",
+        "#include <stdio.h>\n#include <stdlib.h>\n\nstruct Node {\n    int data;\n    struct Node *next;\n};\n\nint hasCycle(struct Node *head) {\n    struct Node *slow = head;\n    struct Node *fast = head;\n\n    while (fast != NULL && fast->next != NULL) {\n        slow = slow->next;\n        fast = fast->next->next;\n\n        if (slow == fast)\n            return 1;\n    }\n\n    return 0;\n}",
+        "#include <stdio.h>\n\n#define V 5\n\nvoid BFS(int graph[V][V], int start) {\n    int queue[V];\n    int visited[V] = {0};\n    int front = 0, rear = 0;\n\n    queue[rear++] = start;\n    visited[start] = 1;\n\n    while (front < rear) {\n        int node = queue[front++];\n        printf(\"%d \", node);\n\n        for (int i = 0; i < V; i++) {\n            if (graph[node][i] && !visited[i]) {\n                visited[i] = 1;\n                queue[rear++] = i;\n            }\n        }\n    }\n}"
+      ]
+    },
+    "Python": {
+      "Easy": [
+        "s = \"swiss\"\n\nfor ch in s:\n    if s.count(ch) == 1:\n        print(ch)\n        break",
+        "n = 29\n\nif n < 2:\n    print(\"Not Prime\")\nelse:\n    prime = True\n\n    for i in range(2, int(n ** 0.5) + 1):\n        if n % i == 0:\n            prime = False\n            break\n\n    print(\"Prime\" if prime else \"Not Prime\")",
+        "numbers = [10, 25, 5, 40, 15]\nprint(max(numbers))"
+      ],
+      "Medium": [
+        "def longest_substring(s):\n    seen = {}\n    left = 0\n    longest = 0\n\n    for right, char in enumerate(s):\n        if char in seen and seen[char] >= left:\n            left = seen[char] + 1\n\n        seen[char] = right\n        longest = max(longest, right - left + 1)\n\n    return longest\n\nprint(longest_substring(\"abcabcbb\"))",
+        "class Node:\n    def __init__(self, data):\n        self.data = data\n        self.next = None\n\n\ndef reverse(head):\n    prev = None\n    current = head\n\n    while current:\n        next_node = current.next\n        current.next = prev\n        prev = current\n        current = next_node\n\n    return prev",
+        "numbers = [1, 2, 3, 2, 4, 1, 5]\n\nduplicates = []\nseen = set()\n\nfor num in numbers:\n    if num in seen:\n        duplicates.append(num)\n    else:\n        seen.add(num)\n\nprint(duplicates)"
+      ],
+      "Hard": [
+        "from collections import OrderedDict\n\nclass LRUCache:\n    def __init__(self, capacity):\n        self.capacity = capacity\n        self.cache = OrderedDict()\n\n    def get(self, key):\n        if key not in self.cache:\n            return -1\n\n        self.cache.move_to_end(key)\n        return self.cache[key]\n\n    def put(self, key, value):\n        if key in self.cache:\n            self.cache.move_to_end(key)\n\n        self.cache[key] = value\n\n        if len(self.cache) > self.capacity:\n            self.cache.popitem(last=False)",
+        "class Node:\n    def __init__(self, data):\n        self.data = data\n        self.next = None\n\n\ndef has_cycle(head):\n    slow = head\n    fast = head\n\n    while fast and fast.next:\n        slow = slow.next\n        fast = fast.next.next\n\n        if slow == fast:\n            return True\n\n    return False",
+        "from collections import deque\n\ndef bfs(graph, start):\n    visited = set([start])\n    queue = deque([start])\n\n    while queue:\n        node = queue.popleft()\n        print(node)\n\n        for neighbor in graph[node]:\n            if neighbor not in visited:\n                visited.add(neighbor)\n                queue.append(neighbor)\n\n\ndef dfs(graph, node, visited=None):\n    if visited is None:\n        visited = set()\n\n    visited.add(node)\n    print(node)\n\n    for neighbor in graph[node]:\n        if neighbor not in visited:\n            dfs(graph, neighbor, visited)"
+      ]
+    },
+    "Java": {
+      "Easy": [
+        "public class Main {\n    public static void main(String[] args) {\n        int[] arr = {10, 20, 5, 40, 30};\n\n        int largest = arr[0];\n        int second = Integer.MIN_VALUE;\n\n        for (int x : arr) {\n            if (x > largest) {\n                second = largest;\n                largest = x;\n            } else if (x > second && x != largest) {\n                second = x;\n            }\n        }\n\n        System.out.println(second);\n    }\n}",
+        "public class Main {\n    public static void main(String[] args) {\n        String str = \"hello\";\n\n        for (int i = str.length() - 1; i >= 0; i--) {\n            System.out.print(str.charAt(i));\n        }\n    }\n}",
+        "public class Main {\n    public static void main(String[] args) {\n        int n = 29;\n        boolean prime = n >= 2;\n\n        for (int i = 2; i * i <= n && prime; i++) {\n            if (n % i == 0)\n                prime = false;\n        }\n\n        System.out.println(prime ? \"Prime\" : \"Not Prime\");\n    }\n}"
+      ],
+      "Medium": [
+        "class Node {\n    int data;\n    Node next;\n\n    Node(int data) {\n        this.data = data;\n    }\n}\n\nclass Solution {\n    static Node reverse(Node head) {\n        Node prev = null;\n        Node current = head;\n\n        while (current != null) {\n            Node next = current.next;\n            current.next = prev;\n            prev = current;\n            current = next;\n        }\n\n        return prev;\n    }\n}",
+        "import java.util.Stack;\n\npublic class Main {\n    public static void main(String[] args) {\n        Stack<Integer> stack = new Stack<>();\n\n        stack.push(10);\n        stack.push(20);\n        stack.push(30);\n\n        System.out.println(stack.pop());\n    }\n}",
+        "import java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        int[] arr = {1, 2, 3, 2, 4, 1};\n\n        Set<Integer> seen = new HashSet<>();\n        Set<Integer> duplicates = new HashSet<>();\n\n        for (int x : arr) {\n            if (!seen.add(x))\n                duplicates.add(x);\n        }\n\n        System.out.println(duplicates);\n    }\n}"
+      ],
+      "Hard": [
+        "import java.util.*;\n\nclass LRUCache {\n    private final int capacity;\n    private final LinkedHashMap<Integer, Integer> cache;\n\n    LRUCache(int capacity) {\n        this.capacity = capacity;\n\n        cache = new LinkedHashMap<Integer, Integer>(\n            capacity, 0.75f, true\n        ) {\n            protected boolean removeEldestEntry(\n                    Map.Entry<Integer, Integer> eldest) {\n                return size() > LRUCache.this.capacity;\n            }\n        };\n    }\n\n    int get(int key) {\n        return cache.getOrDefault(key, -1);\n    }\n\n    void put(int key, int value) {\n        cache.put(key, value);\n    }\n}",
+        "class Node {\n    int data;\n    Node next;\n\n    Node(int data) {\n        this.data = data;\n    }\n}\n\nclass Solution {\n    static boolean hasCycle(Node head) {\n        Node slow = head;\n        Node fast = head;\n\n        while (fast != null && fast.next != null) {\n            slow = slow.next;\n            fast = fast.next.next;\n\n            if (slow == fast)\n                return true;\n        }\n\n        return false;\n    }\n}",
+        "import java.util.*;\n\npublic class GraphTraversal {\n    static void bfs(Map<Integer, List<Integer>> graph, int start) {\n        Queue<Integer> queue = new LinkedList<>();\n        Set<Integer> visited = new HashSet<>();\n\n        queue.add(start);\n        visited.add(start);\n\n        while (!queue.isEmpty()) {\n            int node = queue.poll();\n            System.out.print(node + \" \");\n\n            for (int next : graph.getOrDefault(node, new ArrayList<>())) {\n                if (visited.add(next))\n                    queue.add(next);\n            }\n        }\n    }\n\n    static void dfs(\n        Map<Integer, List<Integer>> graph,\n        int node,\n        Set<Integer> visited) {\n\n        visited.add(node);\n        System.out.print(node + \" \");\n\n        for (int next : graph.getOrDefault(node, new ArrayList<>())) {\n            if (!visited.contains(next))\n                dfs(graph, next, visited);\n        }\n    }\n}"
+      ]
+    },
+    "SQL": {
+      "Easy": [
+        "SELECT MAX(salary) AS second_highest\nFROM Employee\nWHERE salary < (SELECT MAX(salary) FROM Employee);",
+        "SELECT *\nFROM Employee\nWHERE salary > 50000;",
+        "SELECT department_id, COUNT(*) AS employee_count\nFROM Employee\nGROUP BY department_id;"
+      ],
+      "Medium": [
+        "SELECT e.*\nFROM Employee e\nWHERE e.salary > (\n    SELECT AVG(e2.salary)\n    FROM Employee e2\n    WHERE e2.department_id = e.department_id\n);",
+        "SELECT department_id, MAX(salary) AS second_highest_salary\nFROM (\n    SELECT department_id,\n           salary,\n           DENSE_RANK() OVER (\n               PARTITION BY department_id\n               ORDER BY salary DESC\n           ) AS rnk\n    FROM Employee\n) ranked\nWHERE rnk = 2\nGROUP BY department_id;",
+        "SELECT name, email, COUNT(*) AS duplicate_count\nFROM Employee\nGROUP BY name, email\nHAVING COUNT(*) > 1;"
+      ],
+      "Hard": [
+        "SELECT *\nFROM (\n    SELECT e.*,\n           DENSE_RANK() OVER (\n               PARTITION BY department_id\n               ORDER BY salary DESC\n           ) AS rnk\n    FROM Employee e\n) ranked\nWHERE rnk <= 3;",
+        "SELECT department_id,\n       MAX(salary) - MIN(salary) AS salary_difference\nFROM Employee\nGROUP BY department_id;",
+        "SELECT employee_id,\n       joining_date,\n       salary,\n       SUM(salary) OVER (\n           ORDER BY joining_date\n           ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW\n       ) AS running_total\nFROM Employee\nORDER BY joining_date;"
+      ]
+    },
+    "Web Development": {
+      "Easy": [
+        "<!DOCTYPE html>\n<html>\n<body>\n\n<form>\n    <input type=\"text\" name=\"name\" placeholder=\"Name\">\n    <input type=\"email\" name=\"email\" placeholder=\"Email\">\n    <input type=\"password\" name=\"password\" placeholder=\"Password\">\n    <button type=\"submit\">Register</button>\n</form>\n\n</body>\n</html>",
+        "function reverseString(str) {\n    return str.split(\"\").reverse().join(\"\");\n}\n\nconsole.log(reverseString(\"hello\"));",
+        "<!DOCTYPE html>\n<html>\n<head>\n<style>\nnav {\n    display: flex;\n    justify-content: space-around;\n    flex-wrap: wrap;\n}\n\n@media (max-width: 600px) {\n    nav {\n        flex-direction: column;\n    }\n}\n</style>\n</head>\n\n<body>\n<nav>\n    <a href=\"#\">Home</a>\n    <a href=\"#\">About</a>\n    <a href=\"#\">Contact</a>\n</nav>\n</body>\n</html>"
+      ],
+      "Medium": [
+        "const searchBox = document.getElementById(\"search\");\nconst products = document.querySelectorAll(\".product\");\n\nsearchBox.addEventListener(\"input\", function () {\n    const value = this.value.toLowerCase();\n\n    products.forEach(product => {\n        const name = product.textContent.toLowerCase();\n        product.style.display =\n            name.includes(value) ? \"block\" : \"none\";\n    });\n});",
+        "<!DOCTYPE html>\n<html>\n<head>\n<style>\n.container {\n    display: grid;\n    grid-template-columns: repeat(\n        auto-fit,\n        minmax(200px, 1fr)\n    );\n    gap: 20px;\n}\n</style>\n</head>\n\n<body>\n<div class=\"container\">\n    <div>Item 1</div>\n    <div>Item 2</div>\n    <div>Item 3</div>\n</div>\n</body>\n</html>",
+        "const form = document.querySelector(\"form\");\n\nform.addEventListener(\"submit\", function(event) {\n    const email = document.querySelector(\"#email\").value;\n    const password = document.querySelector(\"#password\").value;\n\n    if (!email.includes(\"@\") || password.length < 8) {\n        event.preventDefault();\n        alert(\"Enter a valid email and password.\");\n    }\n});"
+      ],
+      "Hard": [
+        "async function loadUsers() {\n    try {\n        const response = await fetch(\n            \"https://api.example.com/users\"\n        );\n\n        const users = await response.json();\n\n        const list = document.getElementById(\"users\");\n\n        users.forEach(user => {\n            const item = document.createElement(\"li\");\n            item.textContent = user.name;\n            list.appendChild(item);\n        });\n    } catch (error) {\n        console.error(error);\n    }\n}\n\nloadUsers();",
+        "let timer;\n\nconst searchBox = document.querySelector(\"#search\");\n\nsearchBox.addEventListener(\"input\", function() {\n    clearTimeout(timer);\n\n    timer = setTimeout(async () => {\n        const response = await fetch(\n            \"/api/search?q=\" +\n            encodeURIComponent(searchBox.value)\n        );\n\n        const data = await response.json();\n        console.log(data);\n    }, 500);\n});",
+        "<!DOCTYPE html>\n<html>\n<head>\n<style>\n.container {\n    max-width: 1000px;\n    margin: auto;\n    padding: 20px;\n}\n\ninput, button {\n    width: 100%;\n    padding: 10px;\n    margin: 5px 0;\n}\n\n@media (min-width: 700px) {\n    input {\n        width: 45%;\n    }\n}\n</style>\n</head>\n\n<body>\n\n<div class=\"container\">\n    <h1>Application</h1>\n\n    <form id=\"form\">\n        <input id=\"name\" placeholder=\"Name\">\n        <input id=\"email\" placeholder=\"Email\">\n        <button type=\"submit\">Submit</button>\n    </form>\n\n    <div id=\"result\"></div>\n</div>\n\n<script>\ndocument.getElementById(\"form\")\n.addEventListener(\"submit\", async function(event) {\n    event.preventDefault();\n\n    const response = await fetch(\"/api/data\");\n    const data = await response.json();\n\n    document.getElementById(\"result\")\n        .textContent = JSON.stringify(data);\n});\n</script>\n\n</body>\n</html>"
+      ]
+    }
+  }
+}
